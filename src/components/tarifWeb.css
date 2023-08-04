@@ -1,0 +1,96 @@
+.tarif-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin:4em;
+  }
+  
+  .tarif-packMini,
+  .tarif-packMedium,
+  .tarif-packfull {
+    width: 30%; 
+    height: auto;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0px 0px 10px 0px rgba(182, 182, 182, 0.75);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .tarif-packMini h2,
+  .tarif-packMedium h2,
+  .tarif-packfull h2 {
+    color: var(--main-color);
+    font-size: 1.5em;
+  }
+  
+  .tarif-packMini p,
+  .tarif-packMedium p,
+  .tarif-packfull p {
+    color: var(--main-color);
+    font-size: 1em;
+  }
+  
+  .border-tarif {
+    height: 40px;
+    padding-top: 0.5em;
+    border-top: 1px solid var(--third-color);
+  }
+
+  .Btn-tarifWeb{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Btn-contact{
+    background-color: var(--third-color);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin: 1em;
+    font-size: 1em;
+    cursor: pointer;
+    width: 30%;
+}
+  
+  .engagement {
+    font-size: 0.8em;
+    border: none;
+  }
+  
+  /* Effet de survol sur les packs */
+  .tarif-packMini:hover,
+  .tarif-packMedium:hover,
+  .tarif-packfull:hover {
+    box-shadow: 0px 0px 15px 0px rgba(182, 182, 182, 0.75);
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Media queries pour le rendu responsive */
+  @media screen and (max-width: 767px) {
+    .tarif-content {
+      flex-direction: column; 
+      align-items: center; 
+      
+    }
+
+    .border-tarif{
+      height: auto;
+    }
+  
+    .tarif-packMini,
+    .tarif-packMedium,
+    .tarif-packfull {
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+      padding-top: 2em;
+      width: 80%; 
+    }
+
+    .Btn-contact{
+        width: 50%;
+        margin-left: 2em;
+    }
+    }
